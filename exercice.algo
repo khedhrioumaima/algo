@@ -1,0 +1,32 @@
+ALGORITHM Exercice
+VAR
+    ch:=string
+    i,n,cpt,v,:=INTEGER
+
+BEGIN
+    write("donner la chaine de caractére qui termine par un point");
+    read(ch);
+    n:=0;
+    j:=0;
+    WHILE (ch[j]!=".") DO
+        n:=n+1;
+        j:=j+1;
+    END_WHILE
+    i:=1
+    cpt:=0
+    WHILE (i<=n) DO
+        WHILE (i<=n and ch[i]='') DO
+            i:=i+1;
+            IF (i<=n and ch[i]!='') THEN
+                cpt:=cpt+1;
+        END_WHILE
+        v:=0;
+        FOR i FROM 1 TO n STEP step  DO
+            IF (ch[i] appartient["A","E","I","U","O","Y"]ou ["a","e","i","u","o","y"]) THEN
+            v:=v+1;
+        END_FOR
+        END_WHILE
+        write("le nombre de mots:",cpt);
+        write("le nombre de voyelle:",v);
+    
+END
