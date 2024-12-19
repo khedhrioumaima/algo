@@ -1,0 +1,23 @@
+
+ PROCEDURE insertion sort(tab  : ARRAY_OF integer[n];)
+    VAR
+        key,n,i,j:=integer
+        ALGORITHM Tri;
+VAR
+    tab:=array;
+    key:=integer;
+    i,j:=integer
+   
+BEGIN
+FOR i FROM 1 TO n STEP step  DO
+    read(tab[i]);
+END_FOR
+    FOR i FROM 2 TO n STEP step  DO
+        j:=i-1;
+        key:=arr[i];
+        WHILE (j>=1 and arr[j]>key) DO
+            arr[j+1]:=arr[j];
+        END_WHILE
+        arr[j+1]:=key;
+    END_FOR
+END

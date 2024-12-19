@@ -22,7 +22,7 @@ BEGIN
         END_WHILE
         v:=0;
         FOR i FROM 1 TO n STEP step  DO
-            IF (ch[i] appartient["A","E","I","U","O","Y"]ou ["a","e","i","u","o","y"]) THEN
+            IF (ch[i] in["A","E","I","U","O","Y"]ou ["a","e","i","u","o","y"]) THEN
             v:=v+1;
         END_FOR
         END_WHILE
